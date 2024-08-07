@@ -6,11 +6,9 @@ function App() {
   
   return (
     <>
-      <div className="scoreboard">
-        <h1>Bascetball scoreboard</h1>
+        <h1>Scoreboard</h1>
         < Score />
          {/* <ButtonsList/> */}
-      </div>
     </>
   )
 }

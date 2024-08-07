@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 export function Score(){
 const [pointsA, setPointsA] = useState(0);
 const [pointsB, setPointsB] = useState(0);
@@ -29,20 +30,18 @@ function updatePointsB3(){
 }
 
     return (
-    <>
-<div className="scoreboard">
-    <div className="score">
+
+    <div className="scoreboard">
         <div className="command">
             <div className="commName">Command A</div>
+            <div className="commName">Command B</div>
         </div>
+        <div className="score">
             <div className="scoreComm">{pointsA}</div>
             <div className="text">:</div>
             <div className="scoreComm">{pointsB}</div>
-        <div className="command">
-            <div className="commName">Command B</div>
         </div>
-    </div>
-    <div className="btnList">
+        <div className="btnList">
             <div >
                 <button className="btn" onClick={updatePointsA}>+1</button>
                 <button className="btn" onClick={updatePointsA2}>+2</button>
@@ -53,8 +52,9 @@ function updatePointsB3(){
                 <button className="btn"onClick={updatePointsB2}>+2</button>
                 <button className="btn"onClick={updatePointsB}>+1</button>
             </div>
-    </div>
+    
+        </div>
  </div>
-    </>
+    
     );
 }
